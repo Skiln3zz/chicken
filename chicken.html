@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src=""script.js></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
@@ -11,7 +12,7 @@
     <div class="iphone">
       <div class="div">
         <div class="overlap-group"><div class="text-wrapper">Boucherie</div></div>
-        <div class="overlap"><div class="text-wrapper-2">0 poulets</div></div>
+        <div class="overlap"><div class="text-wrapper-2">poulets : <span id="counter">0</span></div></div>
         <div class="overlap-2">
           <div class="overlap-3">
             <img class="rectangle" src="img/rectangle-28.svg" />
@@ -44,7 +45,7 @@
           <div class="text-wrapper-7">1</div>
         </div>
         <div class="pouletv">
-          <img class="img" src="img/pouletv2-1.png" />
+          <img class="img" src="img/pouletv2-1.png" onclick = "increment()">
           <div class="text-wrapper-8">par seconde: 0</div>
         </div>
       </div>
