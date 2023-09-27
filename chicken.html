@@ -15,36 +15,39 @@
       <div class="div">
         <div class="overlap-group"><div class="text-wrapper">Boucherie</div></div>
         <div class="overlap"><div class="text-wrapper-2">poulets : <span id="counter">0</span></div></div>
+        <div class="overlap"><div class="text-wrapper-2">Poulets par secondes : <span id="counterpersec">0</span></div></div>
         <div class="overlap-2">
           <div class="overlap-3">
             <img class="rectangle" src="img/rectangle-28.svg" />
-            <div class="text-wrapper-3">Boutique</div>
-            <div class="classic-button-true">
-              <button class="button"><div class="get-started">Pince</div></button>
-            </div>
-            <div class="button-wrapper">
-              <button class="button"><div class="get-started">Barbecue</div></button>
-            </div>
-            <div class="div-wrapper">
-              <button class="button"><div class="get-started">KFC</div></button>
-            </div>
-            <div class="classic-button-true-2">
-              <button class="button"><div class="get-started">Boucher</div></button>
-            </div>
-            <div class="rectangle-2"></div>
-            <div class="rectangle-3"></div>
-            <div class="rectangle-4"></div>
-            <div class="rectangle-5"></div>
-            <div class="rectangle-6"></div>
-            <div class="rectangle-7"></div>
-            <div class="text-wrapper-4">0</div>
-            <img class="pince" src="img/pince-2.png" />
-            <img class="boucher" src="img/boucher-2.png" />
-            <img class="barbecue" src="img/barbecue-1.png" />
+
+            <table class="Boutique">
+              <th colspan="3"><div class="text-wrapper-3">Boutique</div></th>
+              <tr>             
+              <div>            
+                <td><button class="button" onclick = "buyupgrade('pince')"><img class="pince" src="img/pince-2.png" /></td>             
+                <td><button class="button" onclick = "buyupgrade('pince')"><div class="get-started">Pince</div></button></td> 
+                <td><span id="txtprixpince">100</span></td>
+                <td><span id="txtnbpince">1</span></td>
+              </div>             
+              </tr>              
+              <tr>              
+              <div>             
+                <td><button class="button" onclick = "buyupgrade('boucher')"><img class="boucher" src="img/boucher-2.png" /></button></td>             
+                <td><button class="button" onclick = "buyupgrade('boucher')"><div class="get-started">Boucher</div></button></td>
+                <td><span id="txtprixboucher">1000</span></td>
+                <td><span id="txtnbboucher">0</span></td>         
+              </div>             
+              </tr>             
+              <tr>              
+              <div>
+                <td><button class="button" onclick = "buyupgrade('bbq')"><img class="barbecue" src="img/barbecue-1.png" /></button></td>          
+                <td><button class="button" onclick = "buyupgrade('bbq')"><div class="get-started">Barbecue</div></button></td>
+                <td><span id="txtprixbbq">10000</span></td>
+                <td><span id="txtnbbbq">0</span></td>          
+              <tr>           
+              </tr>
+              </table>            
           </div>
-          <div class="text-wrapper-5">100</div>
-          <div class="text-wrapper-6">10</div>
-          <div class="text-wrapper-7">1</div>
         </div>
         <div class="pouletv">
           <img class="img" src="img/pouletv2-1.png" onclick = "increment()">
