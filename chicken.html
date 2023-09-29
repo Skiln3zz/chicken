@@ -5,55 +5,43 @@
     <link rel="stylesheet" href="style.css" />
     </head>
     <script src=""script.js></script>
-    <script src="script.js"></script>
+    <script src="scipt.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="iphone">
-      <div class="div">
-        <div class="overlap-group"><div class="text-wrapper">Boucherie</div></div>
-        <div class="overlap"><div class="text-wrapper-2">poulets : <span id="counter">0</span></div></div>
-        <div class="overlap"><div class="text-wrapper-2">Poulets par secondes : <span id="counterpersec">0</span></div></div>
-        <div class="overlap-2">
-          <div class="overlap-3">
-            <img class="rectangle" src="img/rectangle-28.svg" />
-
-            <table class="Boutique">
-              <th colspan="3"><div class="text-wrapper-3">Boutique</div></th>
-              <tr>             
-              <div>            
-                <td><button class="button" onclick = "buyupgrade('pince')"><img class="pince" src="img/pince-2.png" /></td>             
-                <td><button class="button" onclick = "buyupgrade('pince')"><div class="get-started">Pince</div></button></td> 
-                <td><span id="txtprixpince">100</span></td>
-                <td><span id="txtnbpince">1</span></td>
-              </div>             
-              </tr>              
-              <tr>              
-              <div>             
-                <td><button class="button" onclick = "buyupgrade('boucher')"><img class="boucher" src="img/boucher-2.png" /></button></td>             
-                <td><button class="button" onclick = "buyupgrade('boucher')"><div class="get-started">Boucher</div></button></td>
-                <td><span id="txtprixboucher">1000</span></td>
-                <td><span id="txtnbboucher">0</span></td>         
-              </div>             
-              </tr>             
-              <tr>              
-              <div>
-                <td><button class="button" onclick = "buyupgrade('bbq')"><img class="barbecue" src="img/barbecue-1.png" /></button></td>          
-                <td><button class="button" onclick = "buyupgrade('bbq')"><div class="get-started">Barbecue</div></button></td>
-                <td><span id="txtprixbbq">10000</span></td>
-                <td><span id="txtnbbbq">0</span></td>          
-              <tr>           
-              </tr>
-              </table>            
-          </div>
-        </div>
+<div class="titre">Boucherie</div>
+<br>
+<div class="nbpoulets">Poulets : <span id="counter">0</span></div>
+<div class="pouletsec">Poulets par seconde : <span id="counterpersec">0</span></div>
         <div class="pouletv">
-          <img class="img" src="img/pouletv2-1.png" onclick = "increment()">
-          <div class="text-wrapper-8">par seconde: 0</div>
+          <img class="img" src="pouletv2-1.png" onclick = "increment()">
         </div>
+    <table class="Boutique">
+      <th colspan="4"><div class="titrepolice">Boutique</div></th>
+      <tr>
+          <td><button class="button" onclick ="buyupgrade('pince')" title="Chaque pince vous donne un poulet en + à chaque clic"><img src="pince-2.png"/></button></td>
+          </element><td><button class="button-police" onclick="buyupgrade('pince')" title="Chaque pince vous donne un poulet en + à chaque clic">Pince</div></button></td> 
+          <td><div class="police"><span id="txtprixpince">100</span></div></td>
+          <td><div class="police"><span id="txtnbpince">0</span></div></td>
+          
       </div>
-    </div>
+      </tr>
+      <tr>
+      <div>
+        <td><button class="button" onclick ="buyupgrade('boucher')" title="Chaque boucher vous donne un poulet en + par seconde"><img src="boucher-2.png" /></button></td>
+        <td><button class="button-police" onclick ="buyupgrade('boucher')" title="Chaque pince vous donne un poulet en + par seconde">Boucher</button></td>
+        <td><div class="police"><span id="txtprixboucher">1000</span></div></td>
+        <td><div class="police"><span id="txtnbboucher">0</span></div></td>
+      </div>
+      </tr>
+      <tr >
+      <div>
+          <td><button class="button" onclick ="buyupgrade('bbq')" title="Chaque BBQ vous donne 5 poulets en + par seconde"><img src="barbecue-1.png"/></button></td>
+          <td><button class="button-police" onclick ="buyupgrade('bbq')" title="Chaque BBQ vous donne 5 poulets en + par seconde">BBQ</button></td>
+          <td><div class="police"><span id="txtprixbbq">10000</span></div></td>
+          <td><div class="police"><span id="txtnbbbq">0</span></div></td>
+      </table>
   </body>
 </html>
