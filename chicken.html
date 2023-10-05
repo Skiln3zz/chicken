@@ -16,8 +16,30 @@
 <div class="nbpoulets">Poulets : <span id="counter">0</span></div>
 <div class="pouletsec">Poulets par seconde : <span id="counterpersec">0</span></div>
         <div class="pouletv">
-          <img class="img" src="img/pouletv2-1.png" onclick = "increment()">
-        </div>
+          <img class="img" src="img/pouletv2-1.png" onclick = "increment()"></div>
+    <div id="popup">
+        <button class="bouton-popup" onclick="togglePopup()">Instructions</button>
+    <div id="popup-overlay"> 
+    <div class="popup-content">
+    <h2 class="titpopup">Chicken Clicker</h2>
+    <br>
+    <p class="petit-titre">1. Comment jouer à Chicken Clicker</p>
+    <br>
+    <p class="txtpopup">Cliquer avec souris sur le délicieux poulet grillé ! (Démonte pas ta souris non plus)</p>
+    <br>
+    <p class="petit-titre">2. A quoi servent les améliorations ?</p>
+    <br>
+    <p class="txtpopup">La pince : Elle vous permettra d'attraper un poulet en plus à chaque clic !</p>
+    <br>
+    <p class="txtpopup">Le boucher : Il vous cuisinera un poulet par seconde ! Rapide non ? </p>
+    <br>
+    <p class="txtpopup">Le BBQ : Il vous fera griller 5 poulets par seconde ! Belle braise hein !</p>
+    <br>
+    <p class="txtpopup">Le prix de ces améliorations augmentera au fur et à mesure que vous en achèterez...</p>
+    <a href="javascript:void(0)" class="popup-close" onclick="togglePopup()">X</a>  
+    </div>
+    </div>
+    </div>
     <table class="Boutique">
       <th colspan="4"><div class="titrepolice">Boutique</div></th>
       <tr>
